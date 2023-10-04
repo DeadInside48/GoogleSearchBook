@@ -1,0 +1,21 @@
+.search-input {
+  height: 28px;
+  max-width: 300px;
+  display: flex;
+  margin: 15px auto;
+  background-color: white;
+
+  .input {
+    padding: 4px;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    outline: none;
+  }
+
+  .search-icons {
+    height: 100%;
+    width: 28px;
+    cursor: pointer;
+  }
+}

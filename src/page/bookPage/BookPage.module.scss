@@ -1,0 +1,49 @@
+@use '/src/variables';
+
+.book-page {
+  margin: 0 15px;
+
+  .book-cover__wrapper {
+    padding: 50px;
+    background-color: rgb(243, 243, 243);
+
+    .book-cover {
+      max-width: 350px;
+      max-height: 550px;
+    }
+  }
+
+  .book-description_wrapper {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+@media (max-width: variables.$lg) {
+  .book-page{
+    .book-cover__wrapper {
+      padding: 40px;
+
+      .book-cover {
+        max-width: 250px;
+        max-height: 350px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$sm) {
+  .book-page {
+    .book-cover__wrapper {
+      padding: 10px;
+
+      .book-cover {
+        max-width: 150px;
+        max-height: 250px;
+      }
+    }
+  }
+}

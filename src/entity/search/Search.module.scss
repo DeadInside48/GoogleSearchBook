@@ -1,0 +1,19 @@
+@use '/src/variables';
+
+.search {
+  width: 100%;
+
+  .selector-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+}
+
+@media (max-width: variables.$sm) {
+  .search {
+    .selector-wrapper {
+      gap: 0;
+    }
+  }
+}

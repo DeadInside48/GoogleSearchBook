@@ -1,0 +1,17 @@
+@use '/src/variables';
+
+.sorting-by-select {
+  .select-name {
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: variables.$sm) {
+  .sorting-by-select {
+    .select-name {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@use '/src/variables';
+
+.book-search {
+  .count-found-items {
+    text-align: center;
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: 700;
+  }
+
+  .title {
+    display: grid;
+    gap: 15px;
+    margin: 0 15px;
+    grid-template: 1fr / repeat(5, 1fr);
+  }
+}
+
+@media (max-width: variables.$xl) {
+  .book-search {
+    .title {
+      grid-template: 1fr / repeat(4, 1fr);
+    }
+  }
+}
+
+@media (max-width: variables.$lg) {
+  .book-search {
+    .title {
+      grid-template: 1fr / repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: variables.$md) {
+  .book-search {
+    .title {
+      grid-template: 1fr / repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: variables.$sm) {
+  .book-search {
+    .title {
+      grid-template: 1fr / repeat(1, 1fr);
+    }
+  }
+}

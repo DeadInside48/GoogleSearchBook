@@ -1,0 +1,14 @@
+.book-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  background-color: rgb(243, 243, 243);
+  text-decoration: none;
+  color: black;
+
+  .book-cover {
+    width: 180px;
+    height: 250px;
+  }
+}
